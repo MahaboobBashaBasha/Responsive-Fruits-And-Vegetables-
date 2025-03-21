@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Foods Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Fresh Foods</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <div class="cart-container">
+                        <a href="#" onclick="viewCart()" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Fresh Foods</h2>
+                <p>Your Source for Nature's Best</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="cta-button">View Products</a>
+                    <a href="#featured" class="cta-button secondary">Today's Specials</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <h2>Featured Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="Fresh Fruits.jpeg" alt="Fresh Fruits">
+                    <div class="category-content">
+                        <h3>Fresh Fruits</h3>
+                        <p>Naturally sweet and nutritious</p>
+                    </div>
+                    <div class="category-dropdown">
+                        <div class="dropdown-products">
+                            <div class="product-mini-card">
+                                <img src="Fresh Apples.jpeg" alt="Fresh Apples">
+                                <div class="product-details">
+                                    <h4>Fresh Apples</h4>
+                                    <p class="price">$2.99/lb</p>
+                                    <button class="add-to-cart-mini">Add</button>
+                                </div>
+                            </div>
+                            <div class="product-mini-card">
+                                <img src="Ripe Bananas.jpeg" alt="Ripe Bananas">
+                                <div class="product-details">
+                                    <h4>Ripe Bananas</h4>
+                                    <p class="price">$1.49/lb</p>
+                                    <button class="add-to-cart-mini">Add</button>
+                                </div>
+                            </div>
+                            <div class="product-mini-card">
+                                <img src="Blueberries.jpeg" alt="Blueberries">
+                                <div class="product-details">
+                                    <h4>Blueberries</h4>
+                                    <p class="price">$4.99/box</p>
+                                    <button type="button" class="add-to-cart-mini">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Vegetables.jpeg" alt="Fresh Vegetables">
+                    <div class="category-content">
+                        <h3>Fresh Vegetables</h3>
+                        <p>Farm-fresh and organic</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Herbal.jpeg" alt="Fresh Herbs">
+                    <div class="category-content">
+                        <h3>Fresh Herbs</h3>
+                        <p>Add flavor to your dishes</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Dairy Products.jpeg" alt="Dairy Products">
+                    <div class="category-content">
+                        <h3>Dairy Products</h3>
+                        <p>Fresh milk and dairy items</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Bakery.jpeg" alt="Bakery Items">
+                    <div class="category-content">
+                        <h3>Bakery Items</h3>
+                        <p>Freshly baked goods</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Organic Foods.jpeg" alt="Organic Foods">
+                    <div class="category-content">
+                        <h3>Organic Foods</h3>
+                        <p>100% organic products</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Beverages.jpeg" alt="Beverages">
+                    <div class="category-content">
+                        <h3>Beverages</h3>
+                        <p>Refreshing drinks</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Snacks.jpeg" alt="Snacks">
+                    <div class="category-content">
+                        <h3>Snacks</h3>
+                        <p>Healthy snacking options</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Fresh Eggs.jpeg" alt="Eggs">
+                    <div class="category-content">
+                        <h3>Fresh Eggs</h3>
+                        <p>Farm-fresh eggs daily</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Fresh Bread.jpeg" alt="Bread">
+                    <div class="category-content">
+                        <h3>Fresh Bread</h3>
+                        <p>Freshly baked breads</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Nuts & Dry Fruits.jpeg" alt="Nuts and Dry Fruits">
+                    <div class="category-content">
+                        <h3>Nuts & Dry Fruits</h3>
+                        <p>Healthy and nutritious</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="Fresh Spices.jpeg" alt="Spices">
+                    <div class="category-content">
+                        <h3>Fresh Spices</h3>
+                        <p>Pure and aromatic spices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Fresh Apples.jpeg" alt="Fresh Apples">
+                    <h3>Fresh Apples</h3>
+                    <p class="price">$2.99/lb</p>
+                    <p class="description">Sweet  apples fresh from local orchards</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Organic Carrots.webp" alt="Organic Carrots">
+                    <h3>Organic Carrots</h3>
+                    <p class="price">$1.99/lb</p>
+                    <p class="description">Farm-fresh organic carrots</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Ripe Banana.jpeg" alt="Ripe Bananas">
+                    <h3>Ripe Bananas</h3>
+                    <p class="price">$1.49/lb</p>
+                    <p class="description">Perfectly ripened yellow bananas</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Fresh Tomatoes.jpeg" alt="Fresh Tomatoes">
+                    <h3>Fresh Tomatoes</h3>
+                    <p class="price">$2.49/lb</p>
+                    <p class="description">Juicy, ripe tomatoes</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src=" Fresh Mangoes.jpeg" alt="Fresh Tomatoes">
+                    <h3>Fresh Mangoes</h3>
+                    <p class="price">$2.49/lb</p>
+                    <p class="description">Juicy, ripe Mangoes</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Fresh Corn.jpeg" alt="Fresh Corn">
+                    <h3>Fresh Corn</h3>
+                    <p class="price">$2.49/lb</p>
+                    <p class="description">Fresh and Healthly</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Additional Products -->
+                <div class="product-card">
+                    <img src="Fresh Avocado.jpeg" alt="Fresh Avocado">
+                    <h3>Fresh Avocado</h3>
+                    <p class="price">$2.99/each</p>
+                    <p class="description">Creamy and ripe avocados</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Sweet Potato.jpeg" alt="Sweet Potato">
+                    <h3>Sweet Potato</h3>
+                    <p class="price">$1.79/lb</p>
+                    <p class="description">Fresh and nutritious sweet potatoes</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Fresh Kiwi.jpeg" alt="Fresh Kiwi">
+                    <h3>Fresh Kiwi</h3>
+                    <p class="price">$0.99/each</p>
+                    <p class="description">Sweet and tangy kiwi fruits</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Cauliflower.jpeg" alt="Cauliflower">
+                    <h3>Cauliflower</h3>
+                    <p class="price">$3.49/head</p>
+                    <p class="description">Fresh and crisp cauliflower</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Fresh Pineapple.jpeg" alt="Fresh Pineapple">
+                    <h3>Fresh Pineapple</h3>
+                    <p class="price">$4.99/each</p>
+                    <p class="description">Sweet and juicy pineapple</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Fresh Mushrooms.jpeg" alt="Fresh Mushrooms">
+                    <h3>Fresh Mushrooms</h3>
+                    <p class="price">$3.99/lb</p>
+                    <p class="description">Assorted fresh mushrooms</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Blueberries.jpeg" alt="Blueberries">
+                    <h3>Blueberries</h3>
+                    <p class="price">$4.99/box</p>
+                    <p class="description">Fresh and sweet blueberries</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="Capsicum.jpeg" alt="Blueberries">
+                    <h3>Capsicum</h3>
+                    <p class="price">$4.99/box</p>
+                    <p class="description">Fresh and sweet blueberries</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="Asparagus.jpeg" alt="Asparagus">
+                    <h3>Asparagus</h3>
+                    <p class="price">$3.99/bunch</p>
+                    <p class="description">Fresh green asparagus</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About Fresh Foods</h2>
+                    <p>Welcome to Fresh Foods, your premier destination for the finest fresh fruits and vegetables. Since 2020, we've been committed to bringing nature's best directly to your table.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3>100% Organic</h3>
+                            <p>All our products are certified organic and naturally grown</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <h3>Fast Delivery</h3>
+                            <p>Same day delivery to ensure maximum freshness</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h3>Best Quality</h3>
+                            <p>Handpicked selection of premium produce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Fresh Street, Produce City, PC 12345</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@freshfoods.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fresh Foods Market. All rights reserved.</p>
+        <p> Shaik Mahaboob Basha</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
